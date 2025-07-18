@@ -1,0 +1,16 @@
+import { Route, Routes } from "react-router-dom";
+import Header from "./components/header/header";
+imp;
+
+function App() {
+  return (
+    <div className="flex flex-col flex-center h-screen bg-teal-100">
+      <Header />
+      <Routes>
+        <Route to="/" element={<Home />}></Route>
+      </Routes>
+    </div>
+  );
+}
+
+export default App;

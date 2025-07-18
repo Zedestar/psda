@@ -27,7 +27,7 @@ const headerData = [
   {
     id: 6,
     content: "Contacts",
-    link: "/contact",
+    link: "/contacts",
   },
 ];
 

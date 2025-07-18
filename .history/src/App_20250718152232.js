@@ -5,19 +5,18 @@ import AboutPage from "./pages/about/about";
 import Projects from "./pages/projects/projects";
 import Announcements from "./pages/announcements/announcements";
 import Contributions from "./pages/contirbutions/contributions";
-import Contacts from "./pages/contacts/contacts";
 
 function App() {
   return (
     <div className="flex flex-col flex-center h-screen bg-teal-100">
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/announcements" element={<Announcements />} />
-        <Route path="/contributions" element={<Contributions />} />
-        <Route path="/contact" element={<Contacts />} />
+        <Route to="/" element={<Home />} />
+        <Route to="/about" element={<AboutPage />} />
+        <Route to="/projects" element={<Projects />} />
+        <Route to="/announcements" element={<Announcements />} />
+        <Route to="/contributions" element={<Contributions />} />
+        <Route to="" />
       </Routes>
     </div>
   );

@@ -9,7 +9,7 @@ function HeaderItem({ item, active, setActive }) {
       }`}
       onClick={() => setActive(item.id)}
     >
-      <Link to={item.link}>{item.content}</Link>
+      <Link>{item.content}</Link>
     </li>
   );
 }

@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 function HeaderItem({ item, active, setActive }) {
   console.log(active);
   return (
@@ -9,7 +7,7 @@ function HeaderItem({ item, active, setActive }) {
       }`}
       onClick={() => setActive(item.id)}
     >
-      <Link to={item.link}>{item.content}</Link>
+      {item.content}
     </li>
   );
 }

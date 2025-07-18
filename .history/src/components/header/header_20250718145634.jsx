@@ -4,11 +4,11 @@ import HeaderItem from "./header-item";
 import psdaImage from "../../assets/images/psdaImage.png";
 
 function Header() {
-  const [active, setActive] = useState(1);
+  const [active, setActive] = useState(0);
   return (
-    <header className="flex items-center justify-between p-4 border-b-2 border-b-psdaGreen">
+    <header className="flex items-center justify-between p-4 border-b-2">
       <div className="text-3xl rounded-full overflow-hidden">
-        <img className="h-12 w-12" src={psdaImage} alt="" />
+        <img className="h-10 w-10" src={psdaImage} alt="" />
       </div>{" "}
       <ul className="flex justify-center space-x-10 flex-center">
         {headerData.map((item) => (
