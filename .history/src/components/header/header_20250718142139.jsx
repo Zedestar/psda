@@ -7,8 +7,8 @@ function Header() {
   const [active, setActive] = useState(0);
   return (
     <header className="flex items-center justify-between p-4">
-      <div className="text-3xl rounded-full overflow-hidden">
-        <img className="h-10 w-10" src={psdaImage} alt="" />
+      <div className="text-3xl">
+        <img className="h-16 w-100" src={psdaImage} alt="" />
       </div>{" "}
       <ul className="flex justify-center space-x-10 flex-center">
         {headerData.map((item) => (
