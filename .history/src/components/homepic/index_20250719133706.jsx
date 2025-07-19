@@ -1,0 +1,17 @@
+// import psdasPic from "../../assets/images/psdas.jpg";
+import "./index.css";
+
+function HomePic() {
+  return (
+    <div
+      className="h-[70%] bg-gradient-to-br from-blue-400 to-green-500"
+      style={{
+        backgroundImage: "url('/images/psdas.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    ></div>
+  );
+}
+
+export default HomePic;
