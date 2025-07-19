@@ -70,9 +70,9 @@ function AboutPage() {
             our young members every day.
           </p>
         </div>
-        <div className="flex">
+        <div>
           {leadersData.map((item) => (
-            <LeadersCard item={item} />
+            <LeadersCard />
           ))}
         </div>
       </div>

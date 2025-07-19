@@ -1,11 +1,9 @@
-import LeadersCard from "../../components/cards/leaders-card";
 import PrimaryCard from "../../components/cards/primary-card";
 import SecondaryCard from "../../components/cards/secondary-card";
 import TwoLinesCards from "../../components/cards/two-lines-card";
 import aboutUsData from "./about-us-data";
 import core_objectives_data from "./core-objective-goals-data";
 import historyStatusData from "./history-status-data";
-import leadersData from "./leaders-data";
 import mission_vission_impact_data from "./mission-vission-impact";
 
 function AboutPage() {
@@ -70,11 +68,7 @@ function AboutPage() {
             our young members every day.
           </p>
         </div>
-        <div className="flex">
-          {leadersData.map((item) => (
-            <LeadersCard item={item} />
-          ))}
-        </div>
+        <div>{lea}</div>
       </div>
     </div>
   );

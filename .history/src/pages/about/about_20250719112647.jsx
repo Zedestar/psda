@@ -1,4 +1,3 @@
-import LeadersCard from "../../components/cards/leaders-card";
 import PrimaryCard from "../../components/cards/primary-card";
 import SecondaryCard from "../../components/cards/secondary-card";
 import TwoLinesCards from "../../components/cards/two-lines-card";
@@ -70,11 +69,7 @@ function AboutPage() {
             our young members every day.
           </p>
         </div>
-        <div className="flex">
-          {leadersData.map((item) => (
-            <LeadersCard item={item} />
-          ))}
-        </div>
+        <div>{leadersData.map()}</div>
       </div>
     </div>
   );

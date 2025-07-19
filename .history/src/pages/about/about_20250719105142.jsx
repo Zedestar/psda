@@ -1,11 +1,9 @@
-import LeadersCard from "../../components/cards/leaders-card";
 import PrimaryCard from "../../components/cards/primary-card";
 import SecondaryCard from "../../components/cards/secondary-card";
 import TwoLinesCards from "../../components/cards/two-lines-card";
 import aboutUsData from "./about-us-data";
 import core_objectives_data from "./core-objective-goals-data";
 import historyStatusData from "./history-status-data";
-import leadersData from "./leaders-data";
 import mission_vission_impact_data from "./mission-vission-impact";
 
 function AboutPage() {
@@ -32,17 +30,17 @@ function AboutPage() {
             community.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 md:grid-cols-3">
           {core_objectives_data.map((item) => (
             <SecondaryCard item={item} />
           ))}
         </div>
-        <div className="flex flex-col lg:flex-row items-center ">
-          <div className="flex flex-col  m-5 space-y-6 w-1/2">
-            <p className="text-3xl font-semibold text-gray-800">
+        <div className="flex flex-col md:flex-row">
+          <div className="flex flex-col m-5 space-y-6 w-1/2">
+            <p className="text-start text-3xl font-semibold text-gray-800">
               Our Core Values
             </p>
-            <p className="text-gray-600 text-xl">
+            <p className="text-start text-gray-600 text-xl">
               PSDA began in 2021 when a group of young leaders and mentors saw
               the need to support pastors’ children through a dedicated,
               faith-based community. Starting with just 12 members, we've grown
@@ -60,20 +58,6 @@ function AboutPage() {
               <TwoLinesCards item={item} />
             ))}
           </div>
-        </div>
-        <div className="flex flex-col m-5 space-y-6">
-          <p className="text-center text-6xl font-semibold text-gray-800">
-            Our Leardership Team
-          </p>
-          <p className="text-center text-gray-600 text-2xl">
-            Meet the dedicated professionals who guide our mission and support
-            our young members every day.
-          </p>
-        </div>
-        <div className="flex">
-          {leadersData.map((item) => (
-            <LeadersCard item={item} />
-          ))}
         </div>
       </div>
     </div>
