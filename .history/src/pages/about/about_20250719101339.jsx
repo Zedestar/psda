@@ -1,9 +1,7 @@
 import PrimaryCard from "../../components/cards/primary-card";
 import SecondaryCard from "../../components/cards/secondary-card";
-import TwoLinesCards from "../../components/cards/two-lines-card";
 import aboutUsData from "./about-us-data";
 import core_objectives_data from "./core-objective-goals-data";
-import historyStatusData from "./history-status-data";
 import mission_vission_impact_data from "./mission-vission-impact";
 
 function AboutPage() {
@@ -36,11 +34,11 @@ function AboutPage() {
           ))}
         </div>
         <div className="flex">
-          <div className="flex flex-col m-5 space-y-6 w-1/2">
-            <p className="text-start text-3xl font-semibold text-gray-800">
+          <div className="flex flex-col m-5 space-y-6">
+            <p className="text-center text-4xl font-semibold text-gray-800">
               Our Core Values
             </p>
-            <p className="text-start text-gray-600 text-xl">
+            <p className="text-center text-gray-600 text-2xl">
               PSDA began in 2021 when a group of young leaders and mentors saw
               the need to support pastors’ children through a dedicated,
               faith-based community. Starting with just 12 members, we've grown
@@ -53,10 +51,11 @@ function AboutPage() {
               the purpose and values nurtured through PSDA.
             </p>
           </div>
-          <div className="grid grid-cols-2">
-            {historyStatusData.map((item) => (
-              <TwoLinesCards item={item} />
-            ))}
+          <div>
+            <div className="flex items-center flex-col bg-blue-100 p-4 rounded-lg w-36">
+              <p className="text-lg font-extrabold text-blue-500">2021</p>
+              <p>Founded</p>
+            </div>
           </div>
         </div>
       </div>

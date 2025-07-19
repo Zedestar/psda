@@ -36,11 +36,11 @@ function AboutPage() {
           ))}
         </div>
         <div className="flex">
-          <div className="flex flex-col m-5 space-y-6 w-1/2">
-            <p className="text-start text-3xl font-semibold text-gray-800">
+          <div className="flex flex-col m-5 space-y-6">
+            <p className="text-start text-4xl font-semibold text-gray-800">
               Our Core Values
             </p>
-            <p className="text-start text-gray-600 text-xl">
+            <p className="text-start text-gray-600 text-2xl">
               PSDA began in 2021 when a group of young leaders and mentors saw
               the need to support pastors’ children through a dedicated,
               faith-based community. Starting with just 12 members, we've grown
@@ -53,9 +53,9 @@ function AboutPage() {
               the purpose and values nurtured through PSDA.
             </p>
           </div>
-          <div className="grid grid-cols-2">
+          <div>
             {historyStatusData.map((item) => (
-              <TwoLinesCards item={item} />
+              <TwoLinesCards />
             ))}
           </div>
         </div>

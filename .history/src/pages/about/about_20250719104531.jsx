@@ -36,7 +36,7 @@ function AboutPage() {
           ))}
         </div>
         <div className="flex">
-          <div className="flex flex-col m-5 space-y-6 w-1/2">
+          <div className="flex flex-col m-5 space-y-6">
             <p className="text-start text-3xl font-semibold text-gray-800">
               Our Core Values
             </p>
@@ -53,7 +53,7 @@ function AboutPage() {
               the purpose and values nurtured through PSDA.
             </p>
           </div>
-          <div className="grid grid-cols-2">
+          <div>
             {historyStatusData.map((item) => (
               <TwoLinesCards item={item} />
             ))}
