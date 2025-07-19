@@ -8,7 +8,7 @@ function Home() {
   return (
     <div className="w-full h-full overflow-y-scroll">
       <HomePic />
-      <div className="flex  items-center justify-center my-14">
+      <div className="flex  items-center justify-center">
         <div className="w-full flex flex-col m-5 space-y-6 max-w-screen-2xl">
           <p className="text-center text-4xl font-semibold text-gray-800">
             🌟 What Makes PSDA Special

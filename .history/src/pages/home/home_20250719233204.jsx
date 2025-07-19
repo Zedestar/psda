@@ -8,7 +8,7 @@ function Home() {
   return (
     <div className="w-full h-full overflow-y-scroll">
       <HomePic />
-      <div className="flex  items-center justify-center my-14">
+      <div className="flex  items-center justify-center">
         <div className="w-full flex flex-col m-5 space-y-6 max-w-screen-2xl">
           <p className="text-center text-4xl font-semibold text-gray-800">
             🌟 What Makes PSDA Special
@@ -21,14 +21,14 @@ function Home() {
           </p>
         </div>
       </div>
-      <div className="flex items-center justify-center my-14">
+      <div className="flex items-center justify-center">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-screen-2xl">
           {psdaHighlights.map((item) => (
             <PrimaryCard item={item} />
           ))}
         </div>
       </div>
-      <div className="flex items-center justify-center my-14">
+      <div className="flex items-center justify-center">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-screen-2xl">
           {what_we_do_data.map((item) => (
             <TwoLinesCards item={item} />
@@ -36,7 +36,7 @@ function Home() {
         </div>
       </div>
       <div
-        className="h-[50%] flex flex-col items-center justify-center space-y-9 my-14"
+        className="h-[50%] flex flex-col items-center justify-center space-y-9 my-5"
         style={{
           backgroundImage:
             "linear-gradient(to bottom right, rgba(96, 165, 250, 0.7), rgba(34, 197, 94, 0.7))",

@@ -25,7 +25,7 @@ function HomePic() {
         <button className="bg-green-400 p-4 mx-4 text-white text-2xl border border-white rounded-full hover:scale-105">
           Join our community{" "}
         </button>
-        <button className="bg-blue-200 p-4 m-4 text-white border border-white text-2xl rounded-full hover:scale-105">
+        <button className="bg-blue-100 p-4 m-4 text-white border border-white text-2xl rounded-full hover:scale-105">
           Learn More
         </button>
       </div>
