@@ -1,11 +1,6 @@
-import psdasPic from "../../assets/images/psdas.jpg";
-
 function ProjectsCard() {
   return (
-    <div className="rounded-lg border space-y-5 hover:scale-105 transition">
-      <div>
-        <img src={psdasPic} alt="" />
-      </div>
+    <div className="rounded-lg border space-y-5 hover:scale-105">
       <div>
         <p>Title of the project</p>
       </div>
