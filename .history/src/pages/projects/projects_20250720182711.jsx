@@ -20,23 +20,12 @@ function Projects() {
           ))}
         </div>
 
-        <div className="bg-slate-200 py-8 rounded-lg space-y-4 hover:shadow-xl border border-gray-300 transition">
+        <div className="bg-slate-200 py-8 rounded-lg hover:shadow-lg border border-gray-300">
           {project_idea_data.map((item) => (
             <FaceCard item={item} />
           ))}
-          <div className="flex items-center justify-center my-2">
-            <FullRoundedButton
-              text={"Submit your idea"}
-              bgColor={"bg-blue-400"}
-              textColor={"text-white"}
-              onClick={null}
-            />
-            <FullRoundedButton
-              text={"Join existing project"}
-              bgColor={"bg-white"}
-              textColor={"text-black"}
-              onClick={null}
-            />
+          <div>
+            <FullRoundedButton text={"Submit your idea"} />
           </div>
         </div>
       </div>
