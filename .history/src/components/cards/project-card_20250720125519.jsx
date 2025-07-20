@@ -23,7 +23,7 @@ function ProjectsCard() {
           <p className="text-xl text-blue-400">Title of the project</p>
         </div>
         <div>
-          <p className="">
+          <p className="text-lg">
             {" "}
             PSDA began in 2021 when a group of young leaders and mentors saw the
             need to support pastors’ children through a dedicated, faith-based

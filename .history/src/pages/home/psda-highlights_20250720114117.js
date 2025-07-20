@@ -12,7 +12,7 @@ const psdaHighlights = [
     title: "Community Building",
     content:
       "We connect young people to form lasting friendships and supportive peer networks that strengthen communities.",
-    icon: <FaUsers className="text-4xl text-blue-400" />,
+    icon: <FaUsers className="text-4xl" />,
     color: "bg-blue-50",
     text_color: "text-gray-500",
   },
@@ -21,7 +21,7 @@ const psdaHighlights = [
     title: "Creative Projects",
     content:
       "Our programs encourage hands-on learning through art, technology, and community improvement initiatives.",
-    icon: <FaPalette className="text-4xl text-blue-400" />,
+    icon: <FaPalette />,
     color: "bg-blue-50",
     text_color: "text-gray-500",
   },
@@ -30,7 +30,7 @@ const psdaHighlights = [
     title: "Character Development",
     content:
       "We help children build confidence, leadership skills, and positive values that prepare them for life’s challenges.",
-    icon: <FaLaptopCode className="text-4xl text-blue-400" />,
+    icon: <FaLaptopCode />,
     color: "bg-blue-50",
     text_color: "text-gray-500",
   },
@@ -39,7 +39,7 @@ const psdaHighlights = [
     title: "Achievement Recognition",
     content:
       "We celebrate every milestone and accomplishment to inspire pride, motivation, and continued growth.",
-    icon: <FaChild className="text-4xl text-blue-400" />,
+    icon: <FaChild />,
     color: "bg-blue-50",
     text_color: "text-gray-500",
   },

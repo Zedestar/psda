@@ -2,28 +2,26 @@ import { FaCalendarAlt, FaMapMarkedAlt, FaUsers } from "react-icons/fa";
 
 function ProjectsCard() {
   return (
-    <div className="rounded-lg my-3 h-fit border space-y-5 hover:scale-105 transition ">
+    <div className="rounded-lg h-fit border space-y-5 hover:scale-105 transition overflow-hidden">
       <div
-        className="h-44"
+        className="h-32"
         style={{
           backgroundImage: "url('images/psdas.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <div className="flex items-start justify-start  space-x-2">
+        {/* <div className="flex items-start justify-start  space-x-2">
           <p className="bg-blue-400 text-white  rounded-full px-2">Active</p>
-          <p className="border bg-white text-black rounded-full px-2">
-            Cultural
-          </p>
-        </div>
+          <p className="border bg-transparent rounded-full px-2">Cultural</p>
+        </div> */}
       </div>
       <div className="p-4 space-y-2">
         <div>
           <p className="text-xl text-blue-400">Title of the project</p>
         </div>
         <div>
-          <p className="">
+          <p className="text-lg">
             {" "}
             PSDA began in 2021 when a group of young leaders and mentors saw the
             need to support pastors’ children through a dedicated, faith-based
