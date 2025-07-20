@@ -9,12 +9,11 @@ import our_core_value_data from "./core-value-data";
 import historyStatusData from "./history-status-data";
 import leadersData from "./leaders-data";
 import mission_vission_impact_data from "./mission-vission-impact";
-import our_leadership_data from "./our-leadership-data";
 
 function AboutPage() {
   return (
     <div className="w-full h-full flex justify-center overflow-x-scroll">
-      <div className="w-full h-full py-10 space-y-10 max-w-screen-2xl flex flex-col items-center">
+      <div className="w-full h-full py-10 max-w-screen-2xl flex flex-col items-center">
         <div className="flex flex-col m-5 space-y-6">
           {aboutUsData.map((item) => (
             <FaceCard item={item} />
@@ -60,9 +59,13 @@ function AboutPage() {
           </div>
         </div>
         <div className="flex flex-col m-5 space-y-6">
-          {our_leadership_data.map((item) => (
-            <FaceCard item={item} />
-          ))}
+          <p className="text-center text-6xl font-semibold text-gray-800">
+            Our Leardership Team
+          </p>
+          <p className="text-center text-gray-600 text-2xl">
+            Meet the dedicated professionals who guide our mission and support
+            our young members every day.
+          </p>
         </div>
         <div className="flex">
           {leadersData.map((item) => (

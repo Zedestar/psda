@@ -9,7 +9,7 @@ import Contacts from "./pages/contacts/contacts";
 
 function App() {
   return (
-    <div className="flex flex-col items-center flex-center h-screen  bg-slate-100">
+    <div className="flex flex-col flex-center h-screen  bg-slate-100">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />

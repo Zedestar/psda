@@ -5,7 +5,7 @@ import projectsData from "./projects-data";
 
 function Projects() {
   return (
-    <div className="w-full h-full flex flex-col justify-center items-center mt-5  space-y-6 overflow-x-scroll">
+    <div className="w-full h-full flex flex-col justify-center items-center my-10 space-y-6 my-5 overflow-x-scroll">
       <div className="w-[80%] flex items-center justify-center mt-2">
         {project_face_card_data.map((item) => (
           <FaceCard item={item} />

@@ -12,11 +12,9 @@ function ProjectsCard({ item }) {
         }}
       >
         <div className="flex items-start justify-start  space-x-2 p-2">
-          <p className="bg-blue-400 text-white  rounded-full px-2">
-            {item.status}
-          </p>
+          <p className="bg-blue-400 text-white  rounded-full px-2">Active</p>
           <p className="border bg-white text-black rounded-full px-2">
-            {item.category}
+            Cultural
           </p>
         </div>
       </div>
