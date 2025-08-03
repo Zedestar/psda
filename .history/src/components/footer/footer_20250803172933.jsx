@@ -1,7 +1,6 @@
 import followUsData from "./followUsData";
 import contactInfoData from "./contactUsData";
 import headerData from "../header/header-data";
-import { GlobalContext } from "../../context";
 import { Link } from "react-router-dom";
 
 function Footer() {

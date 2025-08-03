@@ -14,7 +14,6 @@ function Header() {
   useEffect(() => {
     localStorage.setItem("activeTab", active);
   }, [active]);
-
   const { subHeader, setSubHeader } = useContext(GlobalContext);
   return (
     <div className="w-full shadow-lg bg-white">

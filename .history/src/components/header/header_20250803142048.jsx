@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import headerData from "./header-data";
 import HeaderItem from "./header-item";
 import psdaImage from "../../assets/images/psdaImage.png";
@@ -6,15 +6,9 @@ import { GlobalContext } from "../../context";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 function Header() {
-  const [active, setActive] = useState(() => {
-    const activeTab = localStorage.getItem("activeTab");
-    return activeTab ? JSON.parse(activeTab) : 1;
-  });
-
-  useEffect(() => {
-    localStorage.setItem("activeTab", active);
-  }, [active]);
-
+  const [active, setActive] = useState(
+    ()=> 
+  );
   const { subHeader, setSubHeader } = useContext(GlobalContext);
   return (
     <div className="w-full shadow-lg bg-white">

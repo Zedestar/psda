@@ -1,8 +1,5 @@
+import { FaEnvelope, FaMapMarkedAlt, FaPhone } from "react-icons/fa";
 import followUsData from "./followUsData";
-import contactInfoData from "./contactUsData";
-import headerData from "../header/header-data";
-import { GlobalContext } from "../../context";
-import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -19,26 +16,28 @@ function Footer() {
         <div>
           <p className="font-bold text-lg">Quick Link</p>
           <ul className="space-y-1">
-            {headerData.map((item) => (
-              <li key={item.id} className="hover:underline">
-                <Link to={item.link} onClick={() => }>
-                  {item.content}
-                </Link>
-              </li>
-            ))}
+            <li>About us</li>
+            <li>Our Projects</li>
+            <li>Join us</li>
+            <li>About us</li>
+            <li>Support us</li>
           </ul>
         </div>
         <div>
           <p className="font-bold text-lg">Contact</p>
           <ul className="space-y-1">
-            {contactInfoData.map((item) => (
-              <li key={item.id} className="flex items-center space-x-2">
-                {item.icon}
-                <a href={item.link} target="_blank" rel="noopener noreferrer">
-                  {item.label}
-                </a>
-              </li>
-            ))}
+            <li>
+              {" "}
+              <FaEnvelope className="text-blue-400" /> info@psda.org
+            </li>
+            <li>
+              {" "}
+              <FaPhone /> +255 784 584 231
+            </li>
+            <li>
+              {" "}
+              <FaMapMarkedAlt /> 123 Morogoro Manzese
+            </li>
           </ul>
         </div>
         <div>
@@ -55,7 +54,7 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <hr className="bg-blue-500"></hr>
+      <hr className="bg-gray-300"></hr>
       <div className="flex justify-between items-center">
         <div> PSDA Community. All rights reserved</div>
         <div>Privacy policy Term of service</div>

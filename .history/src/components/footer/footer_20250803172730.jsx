@@ -1,7 +1,6 @@
 import followUsData from "./followUsData";
 import contactInfoData from "./contactUsData";
 import headerData from "../header/header-data";
-import { GlobalContext } from "../../context";
 import { Link } from "react-router-dom";
 
 function Footer() {
@@ -21,9 +20,7 @@ function Footer() {
           <ul className="space-y-1">
             {headerData.map((item) => (
               <li key={item.id} className="hover:underline">
-                <Link to={item.link} onClick={() => }>
-                  {item.content}
-                </Link>
+                {item.content}
               </li>
             ))}
           </ul>
@@ -47,9 +44,9 @@ function Footer() {
             {followUsData.map((item) => (
               <li key={item.id} className="flex items-center space-x-2">
                 {item.IconBase}
-                <a href={item.link} target="_blank" rel="noopener noreferrer">
+                <Link to={item.link} target="_blank" rel="noopener noreferrer">
                   {item.name}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

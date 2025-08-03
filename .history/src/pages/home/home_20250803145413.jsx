@@ -8,13 +8,23 @@ import what_makes_psda_special from "./what_makes_psda_special_data.js";
 import FaceCard from "../../components/cards/face-card.jsx";
 import GridOrganizerContainer from "../../components/gridOrganizerContainer/index.jsx";
 import make_difference_data from "./make_difference_data.js";
-import Footer from "../../components/footer/footer.jsx";
 
 function Home() {
   return (
     <div className="w-full h-full overflow-y-scroll">
       <HomePic />
       <div className="flex  items-center justify-center my-14">
+        {/* <div className="w-full flex flex-col m-5 space-y-6 max-w-screen-2xl">
+          <p className="text-center text-4xl font-semibold text-gray-800">
+            🌟 What Makes PSDA Special
+          </p>
+          <p className="text-center text-gray-600 text-2xl">
+            At PSDA, we firmly believe that every child possesses unique talents
+            and aspirations. Through our thoughtfully crafted programs, we are
+            committed to nurturing individual growth, inspiring creativity, and
+            fostering strong, lasting connections within the community.
+          </p>
+        </div> */}
         {what_makes_psda_special.map((item) => (
           <FaceCard item={item} />
         ))}
@@ -51,7 +61,6 @@ function Home() {
           />
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

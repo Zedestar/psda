@@ -4,6 +4,7 @@ import HeaderItem from "./header-item";
 import psdaImage from "../../assets/images/psdaImage.png";
 import { GlobalContext } from "../../context";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { stringify } from "postcss";
 
 function Header() {
   const [active, setActive] = useState(() => {
@@ -12,9 +13,8 @@ function Header() {
   });
 
   useEffect(() => {
-    localStorage.setItem("activeTab", active);
+    localStorage.setItem("activeTab", stringify(active));
   }, [active]);
-
   const { subHeader, setSubHeader } = useContext(GlobalContext);
   return (
     <div className="w-full shadow-lg bg-white">

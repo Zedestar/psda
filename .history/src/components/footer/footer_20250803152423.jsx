@@ -1,0 +1,16 @@
+function Footer() {
+  return (
+    <div className="w-full p-2">
+      <div>
+        <div></div>
+      </div>
+      <hr className="bg-gray-300"></hr>
+      <div className="flex justify-between items-center">
+        <div> PSDA Community. All rights reserved</div>
+        <div>Privacy policy Term of service</div>
+      </div>
+    </div>
+  );
+}
+
+export default Footer;

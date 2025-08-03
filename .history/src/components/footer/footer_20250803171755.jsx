@@ -1,8 +1,6 @@
+import { FaEnvelope, FaMapMarkedAlt, FaPhone } from "react-icons/fa";
 import followUsData from "./followUsData";
 import contactInfoData from "./contactUsData";
-import headerData from "../header/header-data";
-import { GlobalContext } from "../../context";
-import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -19,13 +17,11 @@ function Footer() {
         <div>
           <p className="font-bold text-lg">Quick Link</p>
           <ul className="space-y-1">
-            {headerData.map((item) => (
-              <li key={item.id} className="hover:underline">
-                <Link to={item.link} onClick={() => }>
-                  {item.content}
-                </Link>
-              </li>
-            ))}
+            <li>About us</li>
+            <li>Our Projects</li>
+            <li>Join us</li>
+            <li>About us</li>
+            <li>Support us</li>
           </ul>
         </div>
         <div>
