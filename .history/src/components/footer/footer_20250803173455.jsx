@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { useContext } from "react";
 
 function Footer() {
-  const { setSubHeader } = useContext(GlobalContext);
+    const { setSubHeader} = useContext(GlobalContext)
   return (
     <div className="w-full flex flex-col space-y-4 py-2 px-6">
       <div className="grid xs:grid-cols-1  sm:grid-cols-2 md:grid-cols-4 my-3 gap-4">
@@ -23,7 +23,7 @@ function Footer() {
           <ul className="space-y-1">
             {headerData.map((item) => (
               <li key={item.id} className="hover:underline">
-                <Link to={item.link} onClick={() => setSubHeader(item.content)}>
+                <Link to={item.link} onClick={() => }>
                   {item.content}
                 </Link>
               </li>
