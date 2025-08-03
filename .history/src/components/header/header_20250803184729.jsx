@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import headerData from "./header-data";
 import HeaderItem from "./header-item";
 import psdaImage from "../../assets/images/psdaImage.png";

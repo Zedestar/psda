@@ -23,7 +23,7 @@ function Footer() {
           <ul className="space-y-1">
             {headerData.map((item) => (
               <li key={item.id} className="hover:underline">
-                <Link to={item.link} onClick={() => setActive(item.id)}>
+                <Link to={item.link} onClick={() => setActive(item.content)}>
                   {item.content}
                 </Link>
               </li>

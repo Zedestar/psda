@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import headerData from "./header-data";
 import HeaderItem from "./header-item";
 import psdaImage from "../../assets/images/psdaImage.png";
@@ -34,7 +34,7 @@ function Header() {
         </header>
       </div>
       {subHeader && (
-        <ul className="lg:hidden flex flex-col items-center justify-center my-2 px-4 space-y-1">
+        <ul className="lg:hidden flex flex-col items-center justify-center my-2 space-y-1">
           {headerData.map((item) => (
             <HeaderItem
               key={item.id}
