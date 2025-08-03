@@ -24,12 +24,7 @@ function Header() {
               />
             ))}
           </ul>
-          <div
-            onClick={() => setSubHeader(!subHeader)}
-            className="lg:hidden cursor-pointer bg-blue-600 p-2 rounded-md text-white"
-          >
-            ➕{/* ➖ */}
-          </div>
+          <div className="lg:hidden cursor-pointer">➕{/* ➖ */}</div>
         </header>
       </div>
       <ul className="lg:hidden flex flex-col items-center justify-center mb-2 space-y-1">

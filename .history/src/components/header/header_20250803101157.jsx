@@ -1,12 +1,10 @@
-import { useContext, useState } from "react";
+import { useState } from "react";
 import headerData from "./header-data";
 import HeaderItem from "./header-item";
 import psdaImage from "../../assets/images/psdaImage.png";
-import { GlobalContext } from "../../context";
 
 function Header() {
   const [active, setActive] = useState(1);
-  const { subHeader, setSubHeader } = useContext(GlobalContext);
   return (
     <div className="w-full shadow-lg bg-white">
       <div className="w-full flex justify-center">
@@ -24,25 +22,21 @@ function Header() {
               />
             ))}
           </ul>
-          <div
-            onClick={() => setSubHeader(!subHeader)}
-            className="lg:hidden cursor-pointer bg-blue-600 p-2 rounded-md text-white"
-          >
-            ➕{/* ➖ */}
+          <div className="lg:hidden">
+            <p>Baby shark</p>
           </div>
         </header>
       </div>
-      <ul className="lg:hidden flex flex-col items-center justify-center mb-2 space-y-1">
-        {subHeader &&
-          headerData.map((item) => (
-            <HeaderItem
-              key={item.id}
-              item={item}
-              active={active}
-              setActive={setActive}
-            />
-          ))}
-      </ul>
+      <div className="lg:hidden flex flex-col items-center justify-center">
+        {headerData.map((item) => (
+          <HeaderItem
+            key={item.id}
+            item={item}
+            active={active}
+            setActive={setActive}
+          />
+        ))}
+      </div>
     </div>
   );
 }
