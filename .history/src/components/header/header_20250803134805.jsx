@@ -3,7 +3,7 @@ import headerData from "./header-data";
 import HeaderItem from "./header-item";
 import psdaImage from "../../assets/images/psdaImage.png";
 import { GlobalContext } from "../../context";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 
 function Header() {
   const [active, setActive] = useState(1);
@@ -29,7 +29,7 @@ function Header() {
             onClick={() => setSubHeader(!subHeader)}
             className="lg:hidden cursor-pointer bg-blue-600 p-2 rounded-md text-white"
           >
-            {subHeader ? <FaTimes /> : <FaBars />}
+            <FaBars />
           </div>
         </header>
       </div>

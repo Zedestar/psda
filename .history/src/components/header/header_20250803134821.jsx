@@ -29,7 +29,7 @@ function Header() {
             onClick={() => setSubHeader(!subHeader)}
             className="lg:hidden cursor-pointer bg-blue-600 p-2 rounded-md text-white"
           >
-            {subHeader ? <FaTimes /> : <FaBars />}
+            <FaBars /> <FaTimes />
           </div>
         </header>
       </div>

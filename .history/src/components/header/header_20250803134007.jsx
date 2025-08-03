@@ -3,7 +3,6 @@ import headerData from "./header-data";
 import HeaderItem from "./header-item";
 import psdaImage from "../../assets/images/psdaImage.png";
 import { GlobalContext } from "../../context";
-import { FaBars, FaTimes } from "react-icons/fa";
 
 function Header() {
   const [active, setActive] = useState(1);
@@ -29,13 +28,13 @@ function Header() {
             onClick={() => setSubHeader(!subHeader)}
             className="lg:hidden cursor-pointer bg-blue-600 p-2 rounded-md text-white"
           >
-            {subHeader ? <FaTimes /> : <FaBars />}
+            ➕{/* ➖ */}
           </div>
         </header>
       </div>
-      {subHeader && (
-        <ul className="lg:hidden flex flex-col items-center justify-center my-2 space-y-1">
-          {headerData.map((item) => (
+      <ul className="lg:hidden flex flex-col items-center justify-center my-2 space-y-1">
+        {subHeader &&
+          headerData.map((item) => (
             <HeaderItem
               key={item.id}
               item={item}
@@ -43,8 +42,7 @@ function Header() {
               setActive={setActive}
             />
           ))}
-        </ul>
-      )}
+      </ul>
     </div>
   );
 }
