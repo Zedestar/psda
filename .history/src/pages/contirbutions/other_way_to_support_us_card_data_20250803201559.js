@@ -2,6 +2,10 @@ import {
   AiOutlineTeam,
   AiOutlineHeart,
   AiOutlineApartment,
+  //   AiOutlineBulb,
+  //   AiOutlineTool,
+  //   AiOutlineStar,
+  //   AiOutlineGift,
 } from "react-icons/ai";
 
 const other_way_to_support_us_card_data = [
@@ -19,7 +23,7 @@ const other_way_to_support_us_card_data = [
     title: "Spread the Word",
     content: "Help us reach more families by sharing our mission.",
     buttonText: "Share Our Story",
-    cardBgColor: "bg-gray-200",
+    cardBgColor: "bg-transparent",
   },
   {
     id: 3,
@@ -27,7 +31,7 @@ const other_way_to_support_us_card_data = [
     title: "Corporate Partnership",
     content: "Partner with us for employee engagement and community impact.",
     buttonText: "Explore Partnership",
-    cardBgColor: "bg-gray-200",
+    cardBgColor: "bg-transparent",
   },
 ];
 

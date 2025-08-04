@@ -1,10 +1,10 @@
 import RectangularRoundedButton from "../button/rectangular-rounded-button";
 import MinContianerInsideContent from "../min-container/min-container-inside-content";
 
-function ContributionCard({ item }) {
+function ContactCard({ item }) {
   return (
     <div
-      className={`border border-solid border-gray-200 flex flex-col justify-center mx-1 my-1 space-y-1 py-7 px-4  rounded-lg text-center max-w-lg hover:shadow-lg transition ${item.cardBgColor}`}
+      className={`border border-solid border-gray-200 bg-white flex flex-col justify-center mx-1 my-1 space-y-2 py-8 px-4  rounded-lg text-center max-w-lg hover:shadow-lg transition `}
     >
       <div className="w-full flex items-center justify-center">
         <div
@@ -15,6 +15,7 @@ function ContributionCard({ item }) {
       </div>
 
       <p className="text-2xl font-bold text-gray-500">{item.title}</p>
+      <p className="text-2xl font-medium text-blue-400">{item.subTitle}</p>
       <p className="text-lg text-gray-500">{item.content}</p>
       <MinContianerInsideContent>
         <RectangularRoundedButton
@@ -29,4 +30,4 @@ function ContributionCard({ item }) {
   );
 }
 
-export default ContributionCard;
+export default ContactCard;

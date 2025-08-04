@@ -1,34 +1,36 @@
 import {
-  AiOutlineTeam,
-  AiOutlineHeart,
-  AiOutlineApartment,
-} from "react-icons/ai";
+  FaEnvelope,
+  FaLocationArrow,
+  FaMapMarked,
+  FaPhone,
+  FaPhoneAlt,
+} from "react-icons/fa";
 
-const other_way_to_support_us_card_data = [
+const contactData = [
   {
     id: 1,
-    icon: <AiOutlineTeam className="text-4xl text-blue-500 " />,
-    title: "Volunteer Your Time",
+    icon: <FaEnvelope className="text-4xl text-blue-400 " />,
+    title: "Email Us",
     content: "Share your skills and passion with our community members.",
     buttonText: "Learn About Volunteering",
     cardBgColor: "bg-gray-200",
   },
   {
     id: 2,
-    icon: <AiOutlineHeart className="text-4xl text-blue-500" />,
-    title: "Spread the Word",
+    icon: <FaPhoneAlt className="text-4xl text-blue-500" />,
+    title: "Call Us",
     content: "Help us reach more families by sharing our mission.",
     buttonText: "Share Our Story",
     cardBgColor: "bg-gray-200",
   },
   {
     id: 3,
-    icon: <AiOutlineApartment className="text-4xl text-blue-500" />,
-    title: "Corporate Partnership",
+    icon: <FaMapMarked className="text-4xl text-blue-500" />,
+    title: "Visit Us",
     content: "Partner with us for employee engagement and community impact.",
     buttonText: "Explore Partnership",
     cardBgColor: "bg-gray-200",
   },
 ];
 
-export default other_way_to_support_us_card_data;
+export default contactData;

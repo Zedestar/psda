@@ -4,7 +4,7 @@ import {
   AiOutlineApartment,
 } from "react-icons/ai";
 
-const other_way_to_support_us_card_data = [
+const contactData = [
   {
     id: 1,
     icon: <AiOutlineTeam className="text-4xl text-blue-500 " />,
@@ -31,4 +31,4 @@ const other_way_to_support_us_card_data = [
   },
 ];
 
-export default other_way_to_support_us_card_data;
+export default contactData;

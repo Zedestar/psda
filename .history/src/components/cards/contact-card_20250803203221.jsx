@@ -15,6 +15,7 @@ function ContributionCard({ item }) {
       </div>
 
       <p className="text-2xl font-bold text-gray-500">{item.title}</p>
+      <p className="text-2xl font-bold text-blue-400">{item.subTitle}</p>
       <p className="text-lg text-gray-500">{item.content}</p>
       <MinContianerInsideContent>
         <RectangularRoundedButton

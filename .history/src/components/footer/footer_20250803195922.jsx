@@ -8,7 +8,7 @@ import { useContext } from "react";
 function Footer() {
   const { setActive } = useContext(GlobalContext);
   return (
-    <div className="w-full flex flex-col space-y-4 py-2 px-6 border-t-2">
+    <div className="w-full flex flex-col space-y-4 py-2 px-6 border-t-0">
       <div className="grid xs:grid-cols-1  sm:grid-cols-2 md:grid-cols-4 my-3 gap-4">
         <div>
           <p className="font-bold text-lg">PSDA</p>

@@ -4,7 +4,7 @@ import MinContianerInsideContent from "../min-container/min-container-inside-con
 function ContributionCard({ item }) {
   return (
     <div
-      className={`border border-solid border-gray-200 flex flex-col justify-center mx-1 my-1 space-y-1 py-7 px-4  rounded-lg text-center max-w-lg hover:shadow-lg transition ${item.cardBgColor}`}
+      className={`border border-solid border-gray-400 flex flex-col justify-center mx-1 my-1 space-y-1 py-7 px-4  rounded-lg text-center max-w-lg hover:shadow-lg transition ${item.cardBgColor}`}
     >
       <div className="w-full flex items-center justify-center">
         <div

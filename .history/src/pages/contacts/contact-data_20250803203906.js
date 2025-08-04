@@ -4,11 +4,11 @@ import {
   AiOutlineApartment,
 } from "react-icons/ai";
 
-const other_way_to_support_us_card_data = [
+const contactData = [
   {
     id: 1,
     icon: <AiOutlineTeam className="text-4xl text-blue-500 " />,
-    title: "Volunteer Your Time",
+    title: "Email Us",
     content: "Share your skills and passion with our community members.",
     buttonText: "Learn About Volunteering",
     cardBgColor: "bg-gray-200",
@@ -16,7 +16,7 @@ const other_way_to_support_us_card_data = [
   {
     id: 2,
     icon: <AiOutlineHeart className="text-4xl text-blue-500" />,
-    title: "Spread the Word",
+    title: "Call Us",
     content: "Help us reach more families by sharing our mission.",
     buttonText: "Share Our Story",
     cardBgColor: "bg-gray-200",
@@ -31,4 +31,4 @@ const other_way_to_support_us_card_data = [
   },
 ];
 
-export default other_way_to_support_us_card_data;
+export default contactData;

@@ -20,12 +20,9 @@ function Contacts() {
       </GridOrganizerContainer>
 
       <div className="flex flex-col md:flex-row justify-between p-5 gap-2 bg-rose-300 w-full">
-        <div className="bg-white md:w-2/3 h-screen p-2 rounded-md">
-          {" "}
-          content one
-        </div>
+        <div className="bg-white md:w-2/3"> content one</div>
 
-        <div className="bg-white md:w-1/3 p-2 rounded-md"> content two</div>
+        <div className="bg-white md:w-1/3"> content two</div>
       </div>
 
       <Footer />
