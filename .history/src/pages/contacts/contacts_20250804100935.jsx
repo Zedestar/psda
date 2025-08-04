@@ -1,13 +1,10 @@
-import { AiOutlineClockCircle } from "react-icons/ai";
 import ContactCard from "../../components/cards/contact-card";
 import FaceCard from "../../components/cards/face-card";
 import Container from "../../components/container";
 import Footer from "../../components/footer/footer";
 import GridOrganizerContainer from "../../components/gridOrganizerContainer";
-import TwoSlotContainer from "../../components/twoSlotContainer/two-slot-container";
 import contactData from "./contact-data";
 import stayInTouchData from "./stayInTouchData";
-import OfficeHours from "./office-hours";
 
 function Contacts() {
   return (
@@ -22,14 +19,14 @@ function Contacts() {
         ))}
       </GridOrganizerContainer>
 
-      <TwoSlotContainer
-        firstSlot={<div>Hey there, am the second slot</div>}
-        secondSlot={
-          <div className="flex flex-col gap-4">
-            <OfficeHours />
-          </div>
-        }
-      />
+      <div className="flex flex-col md:flex-row justify-between p-5 gap-4 bg-rose-300 w-full">
+        <div className="bg-white md:w-2/3 h-screen p-2 rounded-md">
+          {" "}
+          content one
+        </div>
+
+        <div className="bg-white md:w-1/3 p-2 rounded-md"> content two</div>
+      </div>
 
       <Footer />
     </Container>

@@ -7,7 +7,6 @@ import GridOrganizerContainer from "../../components/gridOrganizerContainer";
 import TwoSlotContainer from "../../components/twoSlotContainer/two-slot-container";
 import contactData from "./contact-data";
 import stayInTouchData from "./stayInTouchData";
-import OfficeHours from "./office-hours";
 
 function Contacts() {
   return (
@@ -24,11 +23,7 @@ function Contacts() {
 
       <TwoSlotContainer
         firstSlot={<div>Hey there, am the second slot</div>}
-        secondSlot={
-          <div className="flex flex-col gap-4">
-            <OfficeHours />
-          </div>
-        }
+        secondSlot={<div className="flex flex-col gap-4"></div>}
       />
 
       <Footer />

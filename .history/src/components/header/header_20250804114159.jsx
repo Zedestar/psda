@@ -27,7 +27,7 @@ function Header() {
           </ul>
           <div
             onClick={() => setSubHeader(!subHeader)}
-            className="lg:hidden cursor-pointer hover:bg-blue-600 text-gray-600 hover:text-white transition-all duration-300 p-2 rounded-md "
+            className="lg:hidden cursor-pointer hover:bg-blue-600 text-gray-600 hover:text-white transition p-2 rounded-md "
           >
             {subHeader ? <FaTimes /> : <FaBars />}
           </div>
