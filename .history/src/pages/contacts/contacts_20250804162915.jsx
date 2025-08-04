@@ -9,7 +9,7 @@ import stayInTouchData from "./stayInTouchData";
 import OfficeHours from "./office-hours";
 import QuickActionsCard from "./quick-actions-card";
 import FindUs from "./find-us";
-import { FaRegCommentAlt, FaRegPaperPlane } from "react-icons/fa";
+import { FaRegCommentAlt } from "react-icons/fa";
 import FormTextInput from "../../components/textInput";
 import FormGridOrganizer from "../../components/formGridOrganizer";
 import FormTextArea from "../../components/textInput/textArea";
@@ -68,9 +68,9 @@ function Contacts() {
               />
               <button
                 type="submit"
-                className="w-full flex items-center justify-center space-x-2 bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition duration-200"
+                className="w-full flex items-center bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition duration-200"
               >
-                <p>Send Message</p> <FaRegPaperPlane />
+                Send Message
               </button>
             </form>
           </div>

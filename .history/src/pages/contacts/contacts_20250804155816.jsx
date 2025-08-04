@@ -9,10 +9,7 @@ import stayInTouchData from "./stayInTouchData";
 import OfficeHours from "./office-hours";
 import QuickActionsCard from "./quick-actions-card";
 import FindUs from "./find-us";
-import { FaRegCommentAlt, FaRegPaperPlane } from "react-icons/fa";
-import FormTextInput from "../../components/textInput";
-import FormGridOrganizer from "../../components/formGridOrganizer";
-import FormTextArea from "../../components/textInput/textArea";
+import { FaRegCommentAlt } from "react-icons/fa";
 
 function Contacts() {
   return (
@@ -36,42 +33,30 @@ function Contacts() {
                 Leave us a message
               </p>
             </div>
-            <form className="space-y-4 mt-6">
-              <FormGridOrganizer>
-                <FormTextInput
-                  label={"First Name"}
-                  placeholder={"Enter your first name"}
+            <form>
+              <div className="flex flex-col space-y-4 mt-4">
+                <label className="text-sm text-gray-600">Your Name</label>
+                <input
+                  type="text"
+                  className="border border-gray-300 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
-                <FormTextInput
-                  label={"Second Name"}
-                  placeholder={"Enter your second name"}
+                <label className="text-sm text-gray-600">Your Email</label>
+                <input
+                  type="email"
+                  className="border border-gray-300 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
-              </FormGridOrganizer>
-              <FormGridOrganizer>
-                <FormTextInput
-                  label={"Phone Number"}
-                  placeholder={"Enter your phone number"}
-                />
-                <FormTextInput
-                  label={"Email"}
-                  placeholder={"Enter your email"}
-                />
-              </FormGridOrganizer>
-              <FormTextInput
-                label={"Subject"}
-                placeholder={"Enter the subject of your message"}
-              />
-              <FormTextArea
-                label={"Message"}
-                placeholder={"Type your message here..."}
-                rows={4}
-              />
-              <button
-                type="submit"
-                className="w-full flex items-center justify-center space-x-2 bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition duration-200"
-              >
-                <p>Send Message</p> <FaRegPaperPlane />
-              </button>
+                <label className="text-sm text-gray-600">Message</label>
+                <textarea
+                  rows="4"
+                  className="border border-gray-300 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                ></textarea>
+                <button
+                  type="submit"
+                  className="p-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-all duration-300"
+                >
+                  Send Message
+                </button>
+              </div>
             </form>
           </div>
         }

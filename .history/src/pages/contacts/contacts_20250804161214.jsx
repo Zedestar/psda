@@ -9,10 +9,9 @@ import stayInTouchData from "./stayInTouchData";
 import OfficeHours from "./office-hours";
 import QuickActionsCard from "./quick-actions-card";
 import FindUs from "./find-us";
-import { FaRegCommentAlt, FaRegPaperPlane } from "react-icons/fa";
+import { FaRegCommentAlt } from "react-icons/fa";
 import FormTextInput from "../../components/textInput";
 import FormGridOrganizer from "../../components/formGridOrganizer";
-import FormTextArea from "../../components/textInput/textArea";
 
 function Contacts() {
   return (
@@ -37,41 +36,9 @@ function Contacts() {
               </p>
             </div>
             <form className="space-y-4 mt-6">
-              <FormGridOrganizer>
-                <FormTextInput
-                  label={"First Name"}
-                  placeholder={"Enter your first name"}
-                />
-                <FormTextInput
-                  label={"Second Name"}
-                  placeholder={"Enter your second name"}
-                />
-              </FormGridOrganizer>
-              <FormGridOrganizer>
-                <FormTextInput
-                  label={"Phone Number"}
-                  placeholder={"Enter your phone number"}
-                />
-                <FormTextInput
-                  label={"Email"}
-                  placeholder={"Enter your email"}
-                />
-              </FormGridOrganizer>
-              <FormTextInput
-                label={"Subject"}
-                placeholder={"Enter the subject of your message"}
-              />
-              <FormTextArea
-                label={"Message"}
-                placeholder={"Type your message here..."}
-                rows={4}
-              />
-              <button
-                type="submit"
-                className="w-full flex items-center justify-center space-x-2 bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition duration-200"
-              >
-                <p>Send Message</p> <FaRegPaperPlane />
-              </button>
+              <FormGridOrganizer></FormGridOrganizer>
+              <FormTextInput />
+              <FormTextInput />
             </form>
           </div>
         }

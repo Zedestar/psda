@@ -5,7 +5,7 @@ function TwoSlotContainer({ firstSlot, secondSlot }) {
         {firstSlot}
       </div>
 
-      <div className="w-full md:w-72 rounded-lg">{secondSlot}</div>
+      <div className=" sm:w-72 rounded-lg">{secondSlot}</div>
     </div>
   );
 }

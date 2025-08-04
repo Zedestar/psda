@@ -1,0 +1,26 @@
+import { FaMapMarkedAlt } from "react-icons/fa";
+
+function FindUs() {
+  return (
+    <ul className="bg-white border border-gray-200 shadow-sm p-4 rounded-lg hover:shadow-xl transition-all duration-300 space-y-3 text-gray-600">
+      <li>
+        <h2 className="font-bold">Find Us</h2>
+      </li>
+      <li className="flex flex-col items-center justify-center space-y-2 rounded-md h-36 w-full bg-gray-200">
+        <FaMapMarkedAlt className="text-2xl" />
+        <p>Interactive map coming soon</p>
+      </li>
+      <ul className="text-sm space-y-1">
+        <li>PSDA Headquarters</li>
+        <li>Community Street</li>
+        <li>City state 12345</li>
+      </ul>
+
+      <button className="p-1 w-full text-sm hover:bg-blue-500 hover:text-white rounded-lg border border-gray-200 transition-all duration-300">
+        Get Directions
+      </button>
+    </ul>
+  );
+}
+
+export default FindUs;

@@ -68,7 +68,7 @@ function Contacts() {
               />
               <button
                 type="submit"
-                className="w-full flex items-center justify-center space-x-2 bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition duration-200"
+                className="w-full flex items-center justify-center bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition duration-200"
               >
                 <p>Send Message</p> <FaRegPaperPlane />
               </button>
