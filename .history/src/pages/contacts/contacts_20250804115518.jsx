@@ -1,3 +1,4 @@
+import { AiOutlineClockCircle } from "react-icons/ai";
 import ContactCard from "../../components/cards/contact-card";
 import FaceCard from "../../components/cards/face-card";
 import Container from "../../components/container";
@@ -7,7 +8,6 @@ import TwoSlotContainer from "../../components/twoSlotContainer/two-slot-contain
 import contactData from "./contact-data";
 import stayInTouchData from "./stayInTouchData";
 import OfficeHours from "./office-hours";
-import QuickActionsCard from "./quick-actions-card";
 
 function Contacts() {
   return (
@@ -34,8 +34,6 @@ function Contacts() {
         secondSlot={
           <div className="flex flex-col gap-4">
             <OfficeHours />
-
-            <QuickActionsCard />
           </div>
         }
       />

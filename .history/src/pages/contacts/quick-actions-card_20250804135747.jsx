@@ -1,0 +1,23 @@
+import { AiOutlineUser } from "react-icons/ai";
+
+function QuickActionsCard() {
+  return (
+    <ul className="bg-white border border-gray-200 shadow-sm p-4 rounded-lg hover:shadow-xl transition-all duration-300 space-y-2 text-gray-600">
+      <h1 className="text-xl font-bold">Quick Actions</h1>
+
+      <li className="flex flex-row items-start space-x-2">
+        <div className="w-[20%] bg-blue-200 p-2 rounded-md">
+          <AiOutlineUser />
+        </div>
+        <div>
+          <p className="font-bold">Contact Us</p>
+          <p className="text-sm">
+            Have questions or need assistance? Reach out to us directly.
+          </p>
+        </div>
+      </li>
+    </ul>
+  );
+}
+
+export default QuickActionsCard;

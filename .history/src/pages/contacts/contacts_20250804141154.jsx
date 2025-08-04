@@ -36,6 +36,8 @@ function Contacts() {
             <OfficeHours />
 
             <QuickActionsCard />
+            <QuickActionsCard />
+            <QuickActionsCard />
           </div>
         }
       />
