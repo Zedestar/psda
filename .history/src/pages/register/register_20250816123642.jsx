@@ -73,10 +73,12 @@ function Register() {
                 className="w-full flex items-center justify-center space-x-2 bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition duration-200"
               >
                 {registered ? (
-                  <p>Login</p>
-                ) : (
                   <>
                     <p>Register</p> <FaRegPaperPlane />
+                  </>
+                ) : (
+                  <>
+                    <p>Login</p>
                   </>
                 )}
               </button>
@@ -85,8 +87,8 @@ function Register() {
                 onClick={() => setRegistered(!registered)}
               >
                 {registered
-                  ? "Don't have an account? Register"
-                  : "Have an account? Login"}
+                  ? "Have an account? Login"
+                  : "Don't have an account? Register"}
               </div>
             </form>
           </div>

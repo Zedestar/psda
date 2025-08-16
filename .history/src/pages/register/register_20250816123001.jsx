@@ -23,70 +23,62 @@ function Register() {
               <FaRegCommentAlt className="text-3xl text-blue-500" />
               <p className="text-3xl text-gray-600 font-medium">
                 {registered
-                  ? "Welcome back to our community!"
-                  : "Join Our Community"}
+                  ? "Join Our Community"
+                  : "Welcome back to our community!"}
               </p>
             </div>
             <form className="space-y-4 mt-6" onSubmit={handleSubmit}>
-              {registered ? (
-                <div>
+              <div>
+                <FormTextInput
+                  label={"Username"}
+                  placeholder={"Enter your username"}
+                />
+                <FormTextInput
+                  label={"Password"}
+                  type="password"
+                  placeholder={"Enter your password"}
+                />
+              </div>
+              <div>
+                <FormGridOrganizer>
                   <FormTextInput
-                    label={"Username"}
-                    placeholder={"Enter your username"}
+                    label={"First Name"}
+                    placeholder={"Enter your first name"}
                   />
                   <FormTextInput
-                    label={"Password"}
-                    type="password"
-                    placeholder={"Enter your password"}
+                    label={"Second Name"}
+                    placeholder={"Enter your second name"}
                   />
-                </div>
-              ) : (
-                <div>
-                  <FormGridOrganizer>
-                    <FormTextInput
-                      label={"First Name"}
-                      placeholder={"Enter your first name"}
-                    />
-                    <FormTextInput
-                      label={"Second Name"}
-                      placeholder={"Enter your second name"}
-                    />
-                  </FormGridOrganizer>
-                  <FormGridOrganizer>
-                    <FormTextInput
-                      label={"Phone Number"}
-                      placeholder={"Enter your phone number"}
-                    />
-                    <FormTextInput
-                      label={"Email"}
-                      placeholder={"Enter your email"}
-                    />
-                  </FormGridOrganizer>
+                </FormGridOrganizer>
+                <FormGridOrganizer>
                   <FormTextInput
-                    label={"Father Full name"}
-                    placeholder={"Enter your father full name of your message"}
+                    label={"Phone Number"}
+                    placeholder={"Enter your phone number"}
                   />
-                </div>
-              )}
+                  <FormTextInput
+                    label={"Email"}
+                    placeholder={"Enter your email"}
+                  />
+                </FormGridOrganizer>
+                <FormTextInput
+                  label={"Father Full name"}
+                  placeholder={"Enter your father full name of your message"}
+                />
+              </div>
+
               <button
                 type="submit"
                 className="w-full flex items-center justify-center space-x-2 bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition duration-200"
               >
-                {registered ? (
-                  <p>Login</p>
-                ) : (
-                  <>
-                    <p>Register</p> <FaRegPaperPlane />
-                  </>
-                )}
+                <p>Register</p> <FaRegPaperPlane />
               </button>
               <div
                 className="w-full m-2 flex items-center justify-center cursor-pointer text-blue-600"
                 onClick={() => setRegistered(!registered)}
               >
                 {registered
-                  ? "Don't have an account? Register"
-                  : "Have an account? Login"}
+                  ? "Have an account? Login"
+                  : "Don't have an account? Register"}
               </div>
             </form>
           </div>

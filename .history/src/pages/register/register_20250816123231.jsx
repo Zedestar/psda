@@ -23,8 +23,8 @@ function Register() {
               <FaRegCommentAlt className="text-3xl text-blue-500" />
               <p className="text-3xl text-gray-600 font-medium">
                 {registered
-                  ? "Welcome back to our community!"
-                  : "Join Our Community"}
+                  ? "Join Our Community"
+                  : "Welcome back to our community!"}
               </p>
             </div>
             <form className="space-y-4 mt-6" onSubmit={handleSubmit}>
@@ -72,21 +72,16 @@ function Register() {
                 type="submit"
                 className="w-full flex items-center justify-center space-x-2 bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition duration-200"
               >
-                {registered ? (
-                  <p>Login</p>
-                ) : (
-                  <>
-                    <p>Register</p> <FaRegPaperPlane />
-                  </>
-                )}
+                
+                {<p>Register</p> <FaRegPaperPlane />}
               </button>
               <div
                 className="w-full m-2 flex items-center justify-center cursor-pointer text-blue-600"
                 onClick={() => setRegistered(!registered)}
               >
                 {registered
-                  ? "Don't have an account? Register"
-                  : "Have an account? Login"}
+                  ? "Have an account? Login"
+                  : "Don't have an account? Register"}
               </div>
             </form>
           </div>

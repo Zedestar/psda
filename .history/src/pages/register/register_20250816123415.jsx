@@ -23,8 +23,8 @@ function Register() {
               <FaRegCommentAlt className="text-3xl text-blue-500" />
               <p className="text-3xl text-gray-600 font-medium">
                 {registered
-                  ? "Welcome back to our community!"
-                  : "Join Our Community"}
+                  ? "Join Our Community"
+                  : "Welcome back to our community!"}
               </p>
             </div>
             <form className="space-y-4 mt-6" onSubmit={handleSubmit}>
@@ -85,8 +85,8 @@ function Register() {
                 onClick={() => setRegistered(!registered)}
               >
                 {registered
-                  ? "Don't have an account? Register"
-                  : "Have an account? Login"}
+                  ? "Have an account? Login"
+                  : "Don't have an account? Register"}
               </div>
             </form>
           </div>

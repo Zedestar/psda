@@ -85,8 +85,8 @@ function Register() {
                 onClick={() => setRegistered(!registered)}
               >
                 {registered
-                  ? "Don't have an account? Register"
-                  : "Have an account? Login"}
+                  ? "Have an account? Login"
+                  : "Don't have an account? Register"}
               </div>
             </form>
           </div>
