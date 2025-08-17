@@ -33,13 +33,6 @@ function Register() {
   function handleSubmit(e) {
     e.preventDefault();
 
-    if (registered) {
-      loginUser();
-      console.log(loginUser());
-    } else {
-      console.log("This is signing up logic");
-    }
-
     console.log("Form submitted");
   }
 
@@ -58,21 +51,17 @@ function Register() {
             </div>
             <form className="space-y-4 mt-6" onSubmit={handleSubmit}>
               {registered ? (
-                <>
-                  {error && <p className="text-red-500">{error.message}</p>}
-                  {loading && <p className="text-blue-500">Loading...</p>}
-                  <div>
-                    <FormTextInput
-                      label={"Username"}
-                      placeholder={"Enter your username"}
-                    />
-                    <FormTextInput
-                      label={"Password"}
-                      type="password"
-                      placeholder={"Enter your password"}
-                    />
-                  </div>
-                </>
+                <div>
+                  <FormTextInput
+                    label={"Username"}
+                    placeholder={"Enter your username"}
+                  />
+                  <FormTextInput
+                    label={"Password"}
+                    type="password"
+                    placeholder={"Enter your password"}
+                  />
+                </div>
               ) : (
                 <div>
                   <FormGridOrganizer>

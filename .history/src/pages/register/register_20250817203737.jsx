@@ -13,35 +13,16 @@ function Register() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  const [loginUser, { loading, error, data }] = useMutation(
-    gql`
-      mutation ($username: String!, $password: String!) {
-        tokenAuth(username: $username, password: $password) {
-          token
-          payload
-        }
-      }
-    `,
-    {
-      variables: {
-        username: username,
-        password: password,
-      },
-    }
-  );
+  const [loginUser, { loading, error, data }] = useMutation(LOGIN_MUTATION, {
+    variables: {},
+  });
 
   function handleSubmit(e) {
     e.preventDefault();
-
-    if (registered) {
-      loginUser();
-      console.log(loginUser());
-    } else {
-      console.log("This is signing up logic");
-    }
-
     console.log("Form submitted");
   }
+
+  const logingUser = useMutation();
 
   return (
     <Container>
@@ -58,21 +39,17 @@ function Register() {
             </div>
             <form className="space-y-4 mt-6" onSubmit={handleSubmit}>
               {registered ? (
-                <>
-                  {error && <p className="text-red-500">{error.message}</p>}
-                  {loading && <p className="text-blue-500">Loading...</p>}
-                  <div>
-                    <FormTextInput
-                      label={"Username"}
-                      placeholder={"Enter your username"}
-                    />
-                    <FormTextInput
-                      label={"Password"}
-                      type="password"
-                      placeholder={"Enter your password"}
-                    />
-                  </div>
-                </>
+                <div>
+                  <FormTextInput
+                    label={"Username"}
+                    placeholder={"Enter your username"}
+                  />
+                  <FormTextInput
+                    label={"Password"}
+                    type="password"
+                    placeholder={"Enter your password"}
+                  />
+                </div>
               ) : (
                 <div>
                   <FormGridOrganizer>
@@ -135,6 +112,15 @@ function Register() {
       <Footer />
     </Container>
   );
+
+  const LOGIN_MUTATION = gql`
+    mutation ($username: String!, $password: String!) {
+      tokenAuth(username: $username, password: $password) {
+        token
+        payload
+      }
+    }
+  `;
 }
 
 export default Register;

@@ -35,7 +35,6 @@ function Register() {
 
     if (registered) {
       loginUser();
-      console.log(loginUser());
     } else {
       console.log("This is signing up logic");
     }
@@ -59,8 +58,6 @@ function Register() {
             <form className="space-y-4 mt-6" onSubmit={handleSubmit}>
               {registered ? (
                 <>
-                  {error && <p className="text-red-500">{error.message}</p>}
-                  {loading && <p className="text-blue-500">Loading...</p>}
                   <div>
                     <FormTextInput
                       label={"Username"}

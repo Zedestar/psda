@@ -5,43 +5,17 @@ import TwoSlotContainer from "../../components/twoSlotContainer/two-slot-contain
 import FormGridOrganizer from "../../components/formGridOrganizer";
 import FormTextInput from "../../components/textInput";
 import { useState } from "react";
-import { gql, useMutation } from "@apollo/client";
 // import FormTextArea from "../../components/textInput/textArea";
 
 function Register() {
   const [registered, setRegistered] = useState(false);
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-
-  const [loginUser, { loading, error, data }] = useMutation(
-    gql`
-      mutation ($username: String!, $password: String!) {
-        tokenAuth(username: $username, password: $password) {
-          token
-          payload
-        }
-      }
-    `,
-    {
-      variables: {
-        username: username,
-        password: password,
-      },
-    }
-  );
 
   function handleSubmit(e) {
     e.preventDefault();
-
-    if (registered) {
-      loginUser();
-      console.log(loginUser());
-    } else {
-      console.log("This is signing up logic");
-    }
-
     console.log("Form submitted");
   }
+
+  const logingUser = 
 
   return (
     <Container>
@@ -58,21 +32,17 @@ function Register() {
             </div>
             <form className="space-y-4 mt-6" onSubmit={handleSubmit}>
               {registered ? (
-                <>
-                  {error && <p className="text-red-500">{error.message}</p>}
-                  {loading && <p className="text-blue-500">Loading...</p>}
-                  <div>
-                    <FormTextInput
-                      label={"Username"}
-                      placeholder={"Enter your username"}
-                    />
-                    <FormTextInput
-                      label={"Password"}
-                      type="password"
-                      placeholder={"Enter your password"}
-                    />
-                  </div>
-                </>
+                <div>
+                  <FormTextInput
+                    label={"Username"}
+                    placeholder={"Enter your username"}
+                  />
+                  <FormTextInput
+                    label={"Password"}
+                    type="password"
+                    placeholder={"Enter your password"}
+                  />
+                </div>
               ) : (
                 <div>
                   <FormGridOrganizer>

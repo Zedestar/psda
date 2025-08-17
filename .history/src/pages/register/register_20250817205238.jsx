@@ -35,7 +35,6 @@ function Register() {
 
     if (registered) {
       loginUser();
-      console.log(loginUser());
     } else {
       console.log("This is signing up logic");
     }
