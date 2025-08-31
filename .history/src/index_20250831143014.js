@@ -17,6 +17,7 @@ root.render(
     <BrowserRouter>
       <React.StrictMode>
         <GlobalState>
+          {/* <AppWrapper /> */}
           <App />
         </GlobalState>
       </React.StrictMode>

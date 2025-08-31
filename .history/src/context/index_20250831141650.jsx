@@ -5,7 +5,7 @@ export const GlobalContext = createContext(null);
 function GlobalState({ children }) {
   const [subHeader, setSubHeader] = useState(false);
 
-  const [userMode, setUserMode] = useState(true);
+  const [userMode, setUserMode] = useState(false);
 
   const [active, setActive] = useState(() => {
     const activeTab = localStorage.getItem("activeTab");

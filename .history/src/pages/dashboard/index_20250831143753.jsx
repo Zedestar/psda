@@ -7,7 +7,7 @@ function Dashboard() {
   return (
     <div className="flex h-screen w-full bg-green-600">
       <div
-        className={`bg-rose-500 absolute h-screen w-56 ${sideBarSideLength} transition-all duration-300`}
+        className={`bg-rose-500 absolute h-screen w-56 ${sideBarSideLength} transition-all duration-300 ease-in-out`}
       >
         <div onClick={() => setSideBarSideLength("-left-56")}>
           <AiOutlineClose />

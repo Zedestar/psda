@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { AiOutlineClose } from "react-icons/ai";
 import { FaBars } from "react-icons/fa";
 
 function Dashboard() {
@@ -7,10 +6,10 @@ function Dashboard() {
   return (
     <div className="flex h-screen w-full bg-green-600">
       <div
-        className={`bg-rose-500 absolute h-screen w-56 ${sideBarSideLength} transition-all duration-300`}
+        className={`bg-rose-500 absolute h-screen w-56 ${sideBarSideLength}`}
       >
-        <div onClick={() => setSideBarSideLength("-left-56")}>
-          <AiOutlineClose />
+        <div>
+          <Ai />
         </div>
         <h1>THe side bar</h1>
       </div>

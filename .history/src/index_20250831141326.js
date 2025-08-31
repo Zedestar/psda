@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./index.css";
 import { BrowserRouter } from "react-router-dom";
-import GlobalState from "./context";
+import GlobalState, { GlobalContext } from "./context";
 import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
 
 const client = new ApolloClient({
@@ -11,13 +11,19 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
+const AppWrapper = () => {
+  const { userMode } = useContext(GlobalContext);
+  return userMode ? <App /> : <div>User mode is disabled</div>;
+};
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
   <ApolloProvider client={client}>
     <BrowserRouter>
       <React.StrictMode>
         <GlobalState>
-          <App />
+          <AppWrapper />
         </GlobalState>
       </React.StrictMode>
     </BrowserRouter>

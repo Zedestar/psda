@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./index.css";
@@ -12,6 +12,8 @@ const client = new ApolloClient({
 });
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
+const { userMode } = useContext(GlobalState);
 root.render(
   <ApolloProvider client={client}>
     <BrowserRouter>

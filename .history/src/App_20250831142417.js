@@ -8,7 +8,7 @@ import Contributions from "./pages/contirbutions/contributions";
 import Contacts from "./pages/contacts/contacts";
 import Register from "./pages/register/register.jsx";
 import Dashboard from "./pages/dashboard/index.jsx";
-import { useContext } from "react";
+import { useState, useContext } from "react";
 import { GlobalContext } from "./context";
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div className="flex flex-col items-center flex-center h-screen  bg-slate-100">
-      {!userMode && <Header />}
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutPage />} />

@@ -8,16 +8,14 @@ import Contributions from "./pages/contirbutions/contributions";
 import Contacts from "./pages/contacts/contacts";
 import Register from "./pages/register/register.jsx";
 import Dashboard from "./pages/dashboard/index.jsx";
-import { useContext } from "react";
-import { GlobalContext } from "./context";
+import { useState } from "react";
 
 function App() {
-  // const [userMode, setUserMode] = useState(true);
-  const { userMode } = useContext(GlobalContext);
-
+  const [userMode, setUserMode] = useState(false);
   return (
     <div className="flex flex-col items-center flex-center h-screen  bg-slate-100">
-      {!userMode && <Header />}
+      <Header />
+      userMode ?
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutPage />} />
@@ -26,6 +24,9 @@ function App() {
         <Route path="/contributions" element={<Contributions />} />
         <Route path="/contact" element={<Contacts />} />
         <Route path="/register" element={<Register />} />
+      </Routes>
+      :
+      <Routes>
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </div>
