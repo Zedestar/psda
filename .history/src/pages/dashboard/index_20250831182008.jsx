@@ -10,13 +10,7 @@ function Dashboard() {
       <div
         className={`absolute md:relative bg-red-500 h-screen ${sideBarSideLength} transition-all duration-300`}
       >
-        <div className="flex items-center justify-end">
-          <div className="md:hidden">
-            <AiOutlineClose
-              onClick={() => setSideBarSideLength("-left-56 w-0")}
-            />
-          </div>
-        </div>
+        <div></div>
         <h1>THe side bar</h1>
       </div>
       <div className="flex-1 h-screen">
@@ -25,14 +19,14 @@ function Dashboard() {
             {sideBarSideLength === "-left-56 w-0" ? (
               <FaBars
                 onClick={() => setSideBarSideLength("left-0 w-56")}
-                className="text-lg "
+                className="text-lg mr-6"
               />
             ) : (
               <AiOutlineClose
                 onClick={() => setSideBarSideLength("-left-56 w-0")}
               />
             )}
-            <h1 className="text-2xl ml-6">PSDA contribution Dashboard</h1>
+            <h1 className="text-2xl">PSDA contribution Dashboard</h1>
           </div>
         </div>
         <div className="flex flex-col  h-full">

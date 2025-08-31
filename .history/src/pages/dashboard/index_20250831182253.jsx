@@ -10,8 +10,9 @@ function Dashboard() {
       <div
         className={`absolute md:relative bg-red-500 h-screen ${sideBarSideLength} transition-all duration-300`}
       >
-        <div className="flex items-center justify-end">
-          <div className="md:hidden">
+        <div className="flex items-center justify-between">
+          <div></div>
+          <div>
             <AiOutlineClose
               onClick={() => setSideBarSideLength("-left-56 w-0")}
             />
