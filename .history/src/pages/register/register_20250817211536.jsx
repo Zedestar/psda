@@ -32,13 +32,10 @@ function Register() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    console.log(
-      `This is username ${username} and this is password entered ${password} and this is the data ${data.tokenAuth.token}`
-    );
 
     if (registered) {
       loginUser();
-      console.log(`These are the data from the response ${data}`);
+      console.log(loginUser());
     } else {
       console.log("This is signing up logic");
     }
@@ -66,14 +63,10 @@ function Register() {
                   {loading && <p className="text-blue-500">Loading...</p>}
                   <div>
                     <FormTextInput
-                      value={username}
-                      onChange={(e) => setUsername(e.target.value)}
                       label={"Username"}
                       placeholder={"Enter your username"}
                     />
                     <FormTextInput
-                      value={password}
-                      onChange={(e) => setPassword(e.target.value)}
                       label={"Password"}
                       type="password"
                       placeholder={"Enter your password"}

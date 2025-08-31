@@ -32,9 +32,6 @@ function Register() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    console.log(
-      `This is username ${username} and this is password entered ${password} and this is the data ${data.tokenAuth.token}`
-    );
 
     if (registered) {
       loginUser();
@@ -44,6 +41,10 @@ function Register() {
     }
 
     console.log("Form submitted");
+  }
+
+  if (error) {
+    return <p className="text-red-500">Error: {error.message}</p>;
   }
 
   return (

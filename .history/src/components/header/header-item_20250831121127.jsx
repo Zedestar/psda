@@ -8,7 +8,7 @@ function HeaderItem({ item, active, setActive }) {
     <Link
       to={item.link}
       className={`p-1 rounded-md text-xl text-gray-600 font-gray-100 hover:bg-gray-200 transition cursor-pointer w-full ${
-        item.id === active ? "bg-blue-500 text-white hover:bg-blue-700" : ""
+        item.id === active ? "bg-blue-500 text-white" : ""
       }`}
     >
       <li

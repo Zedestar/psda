@@ -5,7 +5,7 @@ import "./index.css";
 import { BrowserRouter } from "react-router-dom";
 import GlobalState from "./context";
 import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
-// import { onError } from "@apollo/client/link/error";
+import { onError } from "@apollo/client/link/error";
 
 // const errorLink = onError(({ graphQLErrors, networkError }) => {
 //   if (graphQLErrors) {
